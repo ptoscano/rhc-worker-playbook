@@ -27,7 +27,7 @@ BuildRequires: gcc-c++
 Python-based worker for Red Hat connect, used to launch Ansible playbooks via Ansible Runner.
 
 %prep
-%setup -q
+%setup -q -n %{name}
 
 %build
 export GRPC_PYTHON_BUILD_WITH_CYTHON=True
